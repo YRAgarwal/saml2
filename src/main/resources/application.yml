@@ -1,0 +1,11 @@
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          saml:
+            identityprovider:
+              entity-id: http://localhost:8080/realms/customer
+              singlesignon:
+                url: http://localhost:8080/auth/realms/customer/protocol/saml
+                sign-request: false
